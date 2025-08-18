@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poojaa Madhavan | Fullstack Developer (Spring Boot, Java) | Kumbakonam</title>
+    <meta name="description" content="Portfolio of Poojaa Madhavan - MSc Computer Science student & Fullstack Developer specializing in Spring Boot, Java, and web development.">
+    <meta name="keywords" content="Poojaa Madhavan, Fullstack Developer Kumbakonam, Spring Boot developer, Java developer portfolio">
+    
+    <!-- Fonts & Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/profile.css">
+
+    <style>
+        
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header id="header" class="floating-nav">
+    <div class="container header-container">
+        <div class="logo">
+            <div class="logo-img-wrapper">
+                <img src="img/logo1.jpg" alt="Poojaa Madhavan">
+            </div>
+            <h1>Poojaa</h1>
+        </div>
+        <nav>
+            <ul id="nav-menu">
+                <li><a href="#home" class="nav-link"><span class="nav-icon"><i class="fas fa-home"></i></span><span class="nav-text">Home</span></a></li>
+                <li><a href="#about" class="nav-link"><span class="nav-icon"><i class="fas fa-users"></i></span><span class="nav-text">About</span></a></li>
+                <li><a href="#skills" class="nav-link"><span class="nav-icon"><i class="fas fa-skiing"></i></span><span class="nav-text">Skills</span></a></li>
+                <li><a href="#projects" class="nav-link"><span class="nav-icon"><i class="fas fa-paperclip"></i></span><span class="nav-text">Projects</span></a></li>
+                <li><a href="#certifications" class="nav-link"><span class="nav-icon"><i class="fas fa-certificate"></i></span><span class="nav-text">Certifications</span></a></li>
+                <li><a href="#contact" class="nav-link"><span class="nav-icon"><i class="fas fa-phone"></i></span><span class="nav-text">Contact</span></a></li>
+            </ul>
+            <button class="mobile-menu-btn" id="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </div>
+</header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+    <!-- Video Background -->
+    <div class="hero-background">
+        <video autoplay muted loop playsinline>
+            <source src="video/video1.mp4" type="video/mp4">
+            <!-- Fallback image if video doesn't load -->
+            <img src="https://via.placeholder.com/1920x1080/0a192f/6c5ce7?text=Poojaa+Portfolio" alt="Background">
+        </video>
+        <div class="video-overlay"></div>
+    </div>
+    
+    <div class="container hero-content">
+        <div class="hero-text">
+            <div class="name-wrapper">
+                <h1 class="animated-text" data-text="Poojaa Madhavan">Poojaa Madhavan</h1>
+            </div>
+            <div class="title-wrapper">
+                <h2 class="typing-text"></h2>
+            </div>
+            <div class="skills-slider">
+                <span class="skill-tag">Spring Boot</span>
+                <span class="skill-tag">Java Specialist</span>
+                <span class="skill-tag">Web Development</span>
+                <span class="skill-tag">REST APIs</span>
+                <span class="skill-tag">Microservices</span>
+            </div>
+            <div class="hero-buttons">
+                 <button class="cv-download-btn">
+                        <i class="fas fa-download"></i> Download CV
+                </button>
+                <a href="#projects" class="btn btn-accent slide-animate">View Projects</a>
+            </div>
+        </div>
+        <div class="hero-illustration">
+            <div class="code-snippet"></div>
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+        </div>
+    </div>
+    <div class="scroll-indicator">
+        <div class="mouse">
+            <div class="wheel"></div>
+        </div>
+        <div class="arrows">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</section>
+
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>About Me</h2>
+                <p>Motivated and detail-oriented Computer Science graduate with strong foundation in Spring Boot, Java, and Web Development.</p>
+            </div>
+            <div class="about-content">
+                 <div class="about-image">
+                <img src="img/photo5.jpg" alt="Poojaa Madhavan">
+            </div>
+                <div class="about-text">
+                    <h2>Who Am I?</h2>
+                    <p>I'm a passionate Fullstack Developer specializing in Spring Boot and Java technologies. I thrive on solving complex problems and creating efficient solutions that make a difference.</p>
+                    <p>My journey in technology has equipped me with both the technical skills and creative thinking needed to develop innovative applications that drive business success.</p>
+                    <div class="feature-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Fullstack Development</h4>
+                            <p>Building complete web applications from frontend to backend with modern technologies</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- CV Modal -->
+<div class="cv-modal" id="cvModal">
+    <div class="cv-modal-content">
+        <span class="close-cv-modal">&times;</span>
+        <div class="cv-preview-container">
+            <iframe src="docs/resume.pdf" class="cv-preview" id="cvPreview"></iframe>
+            <div class="cv-download-container">
+                <a href="docs/resume.pdf" download="Poojaa_Madhavan_Resume.pdf" class="btn-download-cv">
+                    <i class="fas fa-file-download"></i> Download Resume
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <div class="section-title">
+                <h2>My Skills</h2>
+                <p>Technical skills and technologies I've mastered throughout my career and education.</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="skill-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Languages</h3>
+                    <div class="skill-item">
+                        <i class="fas fa-code"></i> C/C++
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-java"></i> Java
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-c"></i> C#
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-php"></i> PHP
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-python"></i> Python
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>Frameworks</h3>
+                    <div class="skill-item">
+                        <i class="fas fa-leaf"></i> Spring Boot
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-react"></i> React
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-angular"></i> Angular
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-microsoft"></i> .NET
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-fire"></i> Django
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <div class="skill-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Databases</h3>
+                    <div class="skill-item">
+                        <i class="fas fa-database"></i> MySQL
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-server"></i> MongoDB
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-table"></i> PostgreSQL
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-o"></i> Oracle
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-file-code"></i> JSON
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Tools</h3>
+                    <div class="skill-item">
+                        <i class="fab fa-git"></i> Git
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-github"></i> GitHub
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-docker"></i> Docker
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-aws"></i> AWS
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-wordpress"></i> WordPress
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+<section class="projects" id="projects">
+    <div class="container">
+        <div class="section-title">
+            <h2>My Projects</h2>
+            <p>Some of my recent work showcasing my skills and capabilities.</p>
+            <p>Click a category to view projects.</p>
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="cloud">Cloud</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="app">App</button>
+            </div>
+        </div>
+        <div class="projects-grid">
+            <!-- Project 1 - Web -->
+            <div class="project-card" data-category="web">
+                <div class="project-img-container">
+                    <img src="img/project-1.jpeg" alt="College Website" class="project-img">
+                </div>
+                <div class="project-content">
+                    <h3>College Website Design</h3>
+                    <ul>
+                        <li>Government Arts and Science College, Kuthalam</li>
+                        <li>Integrated dynamic photo gallery staff details scrolling text and notice updates</li>
+                    </ul>
+                    <div class="project-buttons">
+                        <a href="https://gasckuthalam.ac.in/" target="_blank" class="btn">View Live</a>
+                        <a href="#" class="btn btn-accent">View Code</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project 2 - Web -->
+            <div class="project-card" data-category="web">
+                <div class="project-img-container">
+                    <img src="img/project2.png" alt="Quiz App" class="project-img">
+                </div>
+                <div class="project-content">
+                    <h3>Time, Speed and Distance (QUIZ)</h3>
+                    <ul>
+                        <li>Time-bound quizzes real exam conditions</li>
+                        <li>Option to retake quizzes to improve performance</li>
+                    </ul>
+                    <div class="project-buttons">
+                        <a href="https://qvesys.in/quiz/quiz/Time-Distance/" target="_blank" class="btn">View Live</a>
+                        <a href="https://github.com/Poojaa022002/quiz" target="_blank" class="btn btn-accent">View Code</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project 3 - Web -->
+            <div class="project-card" data-category="web">
+                <div class="project-img-container">
+                    <img src="img/project3.png" alt="Certification System" class="project-img">
+                </div>
+                <div class="project-content">
+                    <h3>Invoice Management System</h3>
+                    <ul>
+                        <li>Save invoice data into MySQL database or JSON file.</li>
+                        <li>Invoice search, view, edit, and delete functionality.</li>
+                    </ul>
+                    <div class="project-buttons">
+                        <a href="https://qvesys.in/ls/" target="_blank" class="btn">View Live</a>
+                        <a href="#" class="btn btn-accent">View Code</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project 4 - Cloud -->
+            <div class="project-card" data-category="cloud">
+                <div class="project-img-container">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Certification System" class="project-img">
+                </div>
+                <div class="project-content">
+                    <h3>Certification Process Automation</h3>
+                    <ul>
+                        <li>Web-based system for certification approval workflow</li>
+                        <li>Implemented role-based access control</li>
+                    </ul>
+                    <div class="project-buttons">
+                        <a href="https://github.com/Poojaa022002/springboot-certificate" target="_blank" class="btn btn-accent">View Code</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project 5 - App -->
+            <div class="project-card" data-category="app">
+                <div class="project-img-container">
+                    <img src="img/project5.png" class="project-img" alt="E-Healthcare System">
+                </div>
+                <div class="project-content">
+                    <h3>E-Healthcare System Framework</h3>
+                    <ul>
+                        <li>Secure, encrypted medical data sharing platform</li>
+                        <li>Role-based access control with multi-factor auth</li>
+                    </ul>
+                    <div class="project-buttons">
+                        <a href="#" class="btn btn-accent">View Code</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project 6 - App -->
+            <div class="project-card" data-category="app">
+                <div class="project-img-container">
+                    <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Appointment System" class="project-img">
+                </div>
+                <div class="project-content">
+                    <h3>Doctor Appointment Booking System</h3>
+                    <ul>
+                        <li>User-friendly appointment booking interface</li>
+                        <li>Clean layout with easy navigation process.</li>
+                    </ul>
+                    <div class="project-buttons">
+                        <a href="#" class="btn btn-accent">View Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Certifications Section -->
+    <section class="certifications" id="certifications">
+        <div class="container">
+            <div class="section-title">
+                <h2>My Certifications</h2>
+                <p>Professional certifications I've earned to validate my skills and knowledge.</p>
+            </div>
+            <div class="certifications-grid">
+
+            <div class="certification-card">
+                <div class="certification-header">
+                    <div class="certification-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div>
+                        <div class="certification-title">Full-Stack Development Course</div>
+                        <div class="certification-issuer">Qvesys Info Tech</div>
+                    </div>
+                </div>
+                <div class="certification-footer">
+                    <div class="certification-date">2024</div>
+                    <button class="btn-view-certificate" data-certificate="cert1">View Certificate</button>
+                </div>
+            </div>
+
+                <div class="certification-card">
+                    <div class="certification-header">
+                        <div class="certification-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <div>
+                            <div class="certification-title">Java & Spring Boot Specialization</div>
+                            <div class="certification-issuer">Qvesys Info Tech</div>
+                        </div>
+                    </div>
+                    <div class="certification-footer">
+                    <div class="certification-date">2025</div>
+                    <button class="btn-view-certificate" data-certificate="cert2">View Certificate</button>
+                </div>
+                </div>
+                <div class="certification-card">
+                    <div class="certification-header">
+                        <div class="certification-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <div>
+                            <div class="certification-title">Java Backend Developer</div>
+                            <div class="certification-issuer">TECHGIG</div>
+                        </div>
+                    </div>
+                    <div class="certification-footer">
+                    <div class="certification-date">2025</div>
+                    <button class="btn-view-certificate" data-certificate="cert3">View Certificate</button>
+                </div>
+                </div>
+                <div class="certification-card">
+                    <div class="certification-header">
+                        <div class="certification-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <div>
+                            <div class="certification-title">Deep Learning with TensorFlow</div>
+                            <div class="certification-issuer">IBM</div>
+                        </div>
+                    </div>
+                    <div class="certification-footer">
+                    <div class="certification-date">2023</div>
+                    <button class="btn-view-certificate" data-certificate="cert4">View Certificate</button>
+                </div>
+                </div>
+                <div class="certification-card">
+                    <div class="certification-header">
+                        <div class="certification-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <div>
+                            <div class="certification-title">Analyzing Data with Python</div>
+                            <div class="certification-issuer">IBM</div>
+                        </div>
+                    </div>
+                    <div class="certification-footer">
+                    <div class="certification-date">2023</div>
+                    <button class="btn-view-certificate" data-certificate="cert5">View Certificate</button>
+                </div>
+                </div>
+                <div class="certification-card">
+                    <div class="certification-header">
+                        <div class="certification-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <div>
+                            <div class="certification-title">Python for Data Science, AI & Development</div>
+                            <div class="certification-issuer">IBM</div>
+                        </div>
+                    </div>
+                    <div class="certification-footer">
+                    <div class="certification-date">2023</div>
+                    <button class="btn-view-certificate" data-certificate="cert6">View Certificate</button>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificate Modal -->
+<div class="certificate-modal" id="certificateModal">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <img id="certificateImage" src="" alt="Certificate">
+    </div>
+</div>
+
+    <!-- Contact Section -->
+<section class="contact" id="contact">
+    <div class="container">
+        <div class="section-title">
+            <h2 data-aos="fade-down">Get In Touch</h2>
+            <p data-aos="fade-down" data-aos-delay="100">Feel free to reach out for collaborations or just to say hello!</p>
+        </div>
+        
+        <div class="contact-container">
+            <!-- Contact Info Box -->
+            <div class="contact-info-box" data-aos="fade-up">
+                <div class="contact-info-item" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="contact-text">
+                        <h3>Location</h3>
+                        <p>Kumbakonam, Tamil Nadu</p>
+                    </div>
+                </div>
+                
+                <div class="contact-info-item" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-text">
+                        <h3>Email</h3>
+                        <a href="mailto:poojaamadhavan@gmail.com">poojaamadhavan@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Social Media Box -->
+            <div class="follow-section">
+                    <h3>Follow Me</h3>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/poojaa-madhavan-8403872b9/" target="_blank" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/Poojaa022002" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="https://vercel.com/poojaas-projects" target="_blank" class="social-link"><i class="fas fa-v"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+        </div>
+    </div>
+    
+    <!-- Floating Elements for Decoration -->
+    <div class="floating-elements">
+        <div class="circle-1"></div>
+        <div class="circle-2"></div>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-logo">Poojaa Madhavan</div>
+            <p>Fullstack Developer | Spring Boot Specialist | Web Developer</p>
+            <div class="copyright">
+                &copy; 2025 Poojaa Madhavan. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- JavaScript -->
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const navMenu = document.getElementById('nav-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            mobileMenuBtn.innerHTML = navMenu.classList.contains('active') ? 
+                '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
+        });
+        
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('#nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+            });
+        });
+        
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+        
+        // Back to top button
+        const backToTopBtn = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTopBtn.classList.add('active');
+            } else {
+                backToTopBtn.classList.remove('active');
+            }
+        });
+        
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Animation on scroll
+        const animateOnScroll = () => {
+            const elements = document.querySelectorAll('.skill-category, .project-card, .certification-card, .contact-form');
+            
+            elements.forEach(element => {
+                const elementPosition = element.getBoundingClientRect().top;
+                const screenPosition = window.innerHeight / 1.2;
+                
+                if (elementPosition < screenPosition) {
+                    element.style.opacity = '1';
+                    element.style.transform = 'translateY(0)';
+                }
+            });
+        };
+
+        // Set initial state for animated elements
+        document.querySelectorAll('.skill-category, .project-card, .certification-card, .contact-form').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'all 0.5s ease';
+        });
+
+        // Run animation check on scroll and load
+        window.addEventListener('scroll', animateOnScroll);
+        window.addEventListener('load', animateOnScroll);
+        
+
+// certificate
+        document.addEventListener('DOMContentLoaded', function() {
+    const modal = document.getElementById('certificateModal');
+    const modalImg = document.getElementById('certificateImage');
+    const closeBtn = document.querySelector('.close-modal');
+    
+    // Get all view buttons
+    const viewButtons = document.querySelectorAll('.btn-view-certificate');
+    
+    // Certificate image paths (replace with your actual paths)
+    const certificateImages = {
+        cert1: 'img/project2.png',
+        cert2: 'img/project1.png',
+        cert3: 'img/project3.png',
+        cert4: 'images/certificates/tensorflow-cert.jpg',
+        cert5: 'images/certificates/data-python-cert.jpg',
+        cert6: 'images/certificates/python-ai-cert.jpg'
+    };
+    
+    // Add click event to each button
+    viewButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const certId = this.getAttribute('data-certificate');
+            modalImg.src = certificateImages[certId];
+            modal.style.display = 'block';
+            document.body.style.overflow = 'hidden'; // Prevent scrolling
+        });
+    });
+    
+    // Close modal
+    closeBtn.addEventListener('click', function() {
+        modal.style.display = 'none';
+        document.body.style.overflow = 'auto';
+    });
+    
+    // Close when clicking outside image
+    window.addEventListener('click', function(event) {
+        if (event.target === modal) {
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+    });
+    
+    // Close with ESC key
+    document.addEventListener('keydown', function(event) {
+        if (event.key === 'Escape') {
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+    });
+});
+
+
+//projects
+document.addEventListener('DOMContentLoaded', function() {
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const projectCards = document.querySelectorAll('.project-card');
+    const projectsGrid = document.querySelector('.projects-grid');
+    
+    // Initially hide all projects
+    projectCards.forEach(card => {
+        card.style.display = 'none';
+    });
+    
+    // Filter function
+    function filterProjects(category) {
+        let hasMatches = false;
+        
+        projectCards.forEach(card => {
+            card.classList.remove('active');
+            card.style.display = 'none';
+            
+            // Show matching projects
+            if (category === 'all' || card.dataset.category === category) {
+                card.style.display = 'block';
+                setTimeout(() => card.classList.add('active'), 10);
+                hasMatches = true;
+            }
+        });
+        
+        // Update active button
+        filterButtons.forEach(btn => {
+            btn.classList.toggle('active', btn.dataset.filter === category);
+        });
+        
+        // Show message if no projects found
+        if (!hasMatches) {
+            projectsGrid.innerHTML = '<p class="no-projects">No projects found in this category</p>';
+        }
+    }
+    
+    // Add click events to buttons
+    filterButtons.forEach(btn => {
+        btn.addEventListener('click', () => filterProjects(btn.dataset.filter));
+    });
+    
+    // Optional: Show all projects if URL has #all hash
+    if (window.location.hash === '#all') {
+        filterProjects('all');
+    }
+});
+
+// about resume 
+
+document.addEventListener('DOMContentLoaded', function() {
+    // CV Modal functionality
+    const cvModal = document.getElementById('cvModal');
+    const cvBtn = document.querySelector('.cv-download-btn');
+    const closeBtn = document.querySelector('.close-cv-modal');
+    
+    // Open modal when Download CV button is clicked
+    cvBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        cvModal.style.display = 'block';
+        document.body.style.overflow = 'hidden'; // Prevent scrolling
+    });
+    
+    // Close modal
+    closeBtn.addEventListener('click', function() {
+        cvModal.style.display = 'none';
+        document.body.style.overflow = 'auto';
+    });
+    
+    // Close when clicking outside modal
+    window.addEventListener('click', function(e) {
+        if (e.target === cvModal) {
+            cvModal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+    });
+    
+    // Close with ESC key
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && cvModal.style.display === 'block') {
+            cvModal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+    });
+});
+
+
+// hero
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Typing animation for title
+    const typingText = document.querySelector('.typing-text');
+    const titles = ["Fullstack Developer", "Java Specialist", "Spring Boot Expert"];
+    let currentTitle = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+    
+    function typeTitle() {
+        const currentText = titles[currentTitle];
+        
+        if (isDeleting) {
+            typingText.textContent = currentText.substring(0, charIndex - 1);
+            charIndex--;
+        } else {
+            typingText.textContent = currentText.substring(0, charIndex + 1);
+            charIndex++;
+        }
+        
+        if (!isDeleting && charIndex === currentText.length) {
+            isDeleting = true;
+            setTimeout(typeTitle, 1500);
+        } else if (isDeleting && charIndex === 0) {
+            isDeleting = false;
+            currentTitle = (currentTitle + 1) % titles.length;
+            setTimeout(typeTitle, 500);
+        } else {
+            const typingSpeed = isDeleting ? 50 : 100;
+            setTimeout(typeTitle, typingSpeed);
+        }
+    }
+    
+    // Start typing animation after name animation completes
+    setTimeout(typeTitle, 1800);
+    
+    // Skills slider animation
+    const skills = document.querySelectorAll('.skill-tag');
+    let currentSkill = 0;
+    
+    function rotateSkills() {
+        skills.forEach(skill => skill.style.display = 'none');
+        skills[currentSkill].style.display = 'inline-block';
+        currentSkill = (currentSkill + 1) % skills.length;
+        setTimeout(rotateSkills, 2000);
+    }
+    
+    // Start skills rotation after all other animations
+    setTimeout(rotateSkills, 2500);
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const navMenu = document.getElementById('nav-menu');
+    
+    mobileMenuBtn.addEventListener('click', function() {
+        navMenu.classList.toggle('active');
+        this.innerHTML = navMenu.classList.contains('active') ? 
+            '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
+    });
+    
+    // Close menu when clicking on a link
+    document.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', function() {
+            if(navMenu.classList.contains('active')) {
+                navMenu.classList.remove('active');
+                mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+            }
+        });
+    });
+    
+    // Add active class to current section
+    window.addEventListener('scroll', function() {
+        document.querySelectorAll('section').forEach(section => {
+            const sectionTop = section.offsetTop - 100;
+            const sectionHeight = section.offsetHeight;
+            const sectionId = section.getAttribute('id');
+            
+            if(window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+                document.querySelectorAll('.nav-link').forEach(link => {
+                    link.classList.remove('active');
+                    if(link.getAttribute('href') === `#${sectionId}`) {
+                        link.classList.add('active');
+                    }
+                });
+            }
+        });
+    });
+});
+
+
+// contact
+
+ // Initialize AOS animation library
+    AOS.init({
+        duration: 800,
+        easing: 'ease-in-out',
+        once: true
+    });
+document.addEventListener('DOMContentLoaded', function() {
+    // Ensure all social links work
+    const socialLinks = document.querySelectorAll('.social-link');
+    
+    socialLinks.forEach(link => {
+        // Remove any existing click handlers that might be preventing navigation
+        link.onclick = null;
+        
+        // Add proper click handler
+        link.addEventListener('click', function(e) {
+            // For extra safety, prevent any parent elements from blocking
+            e.stopPropagation();
+            window.open(this.href, '_blank');
+        });
+    });
+});
+    
+    </script>
+
+</body>
+</html>
