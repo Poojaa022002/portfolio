@@ -6,7 +6,7 @@
     <meta name="google-site-verification" content="googlef8cf52abc605fae6" />
     <title>Poojaa Madhavan | Fullstack Developer (Spring Boot, Java) | Kumbakonam</title>
     <meta name="description" content="Portfolio of Poojaa Madhavan - MSc Computer Science student & Fullstack Developer specializing in Spring Boot, Java, and web development.">
-    <meta name="keywords" content="Poojaa Madhavan, Fullstack Developer Kumbakonam, Spring Boot developer, Java developer portfolio">
+    <meta name="keywords" content="poojaa, Poojaa Madhavan, Fullstack Developer Kumbakonam, Spring Boot developer, Java developer portfolio">
     
     <!-- Fonts & Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -269,7 +269,7 @@
                     </ul>
                     <div class="project-buttons">
                         <a href="https://gasckuthalam.ac.in/" target="_blank" class="btn">View Live</a>
-                        <a href="#" class="btn btn-accent">View Code</a>
+                        <!-- <a href="#" class="btn btn-accent">View Code</a> -->
                     </div>
                 </div>
             </div>
@@ -305,7 +305,7 @@
                     </ul>
                     <div class="project-buttons">
                         <a href="https://qvesys.in/ls/" target="_blank" class="btn">View Live</a>
-                        <a href="#" class="btn btn-accent">View Code</a>
+                        <!-- <a href="#" class="btn btn-accent">View Code</a> -->
                     </div>
                 </div>
             </div>
@@ -313,16 +313,16 @@
             <!-- Project 4 - Cloud -->
             <div class="project-card" data-category="cloud">
                 <div class="project-img-container">
-                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Certification System" class="project-img">
+                    <img src="img/project4.png" alt="Certification System" class="project-img">
                 </div>
                 <div class="project-content">
-                    <h3>Certification Process Automation</h3>
+                    <h3>Diet Institution, Aduthurai</h3>
                     <ul>
-                        <li>Web-based system for certification approval workflow</li>
-                        <li>Implemented role-based access control</li>
+                        <li>Teacher Management – Add, update, or remove teacher records.</li>
+                        <li>Secure login system for authorized users.</li>
                     </ul>
                     <div class="project-buttons">
-                        <a href="https://github.com/Poojaa022002/springboot-certificate" target="_blank" class="btn btn-accent">View Code</a>
+                        <a href="https://dietadu.in/" target="_blank" class="btn">View Live</a>
                     </div>
                 </div>
             </div>
@@ -350,13 +350,13 @@
                     <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Appointment System" class="project-img">
                 </div>
                 <div class="project-content">
-                    <h3>Doctor Appointment Booking System</h3>
+                    <h3>Automatic Certification System</h3>
                     <ul>
-                        <li>User-friendly appointment booking interface</li>
-                        <li>Clean layout with easy navigation process.</li>
+                        <li>Unique ID Generation – Every registered user gets a unique ID for tracking.</li>
+                        <li>Students register with details, verified via email/OTP</li>
                     </ul>
                     <div class="project-buttons">
-                        <a href="#" class="btn btn-accent">View Code</a>
+                        <a href="https://github.com/Poojaa022002/springboot-certificate" target="_blank" class="btn btn-accent">View Code</a>
                     </div>
                 </div>
             </div>
@@ -366,15 +366,23 @@
 
 
     <!-- Certifications Section -->
-    <section class="certifications" id="certifications">
-        <div class="container">
-            <div class="section-title">
-                <h2>My Certifications</h2>
-                <p>Professional certifications I've earned to validate my skills and knowledge.</p>
-            </div>
-            <div class="certifications-grid">
-
-            <div class="certification-card">
+   <section class="certifications" id="certifications">
+    <div class="container">
+        <div class="section-title">
+            <h2>My Certifications</h2>
+            <p>Professional certifications I've earned to validate my skills and knowledge.</p>
+        </div>
+        
+        <!-- Filter Buttons -->
+        <div class="certification-filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="python">Python</button>
+            <button class="filter-btn" data-filter="hackerrank">HackerRank</button>
+        </div>
+        
+        <div class="certifications-grid">
+            <!-- Full Stack (shown by default) -->
+            <div class="certification-card" data-category="fullstack">
                 <div class="certification-header">
                     <div class="certification-icon">
                         <i class="fas fa-certificate"></i>
@@ -386,88 +394,131 @@
                 </div>
                 <div class="certification-footer">
                     <div class="certification-date">2024</div>
-                    <button class="btn-view-certificate" data-certificate="cert1">View Certificate</button>
+                    <button class="btn-view-certificate" data-certificate="cert1"><i class="fas fa-eye"></i> Show</button>
                 </div>
             </div>
 
-                <div class="certification-card">
-                    <div class="certification-header">
-                        <div class="certification-icon">
-                            <i class="fas fa-certificate"></i>
-                        </div>
-                        <div>
-                            <div class="certification-title">Java & Spring Boot Specialization</div>
-                            <div class="certification-issuer">Qvesys Info Tech</div>
-                        </div>
+            <!-- HackerRank Certifications -->
+            <div class="certification-card" data-category="hackerrank">
+                <div class="certification-header">
+                    <div class="certification-icon">
+                        <i class="fas fa-certificate"></i>
                     </div>
-                    <div class="certification-footer">
+                    <div>
+                        <div class="certification-title">CSS Designing Course</div>
+                        <div class="certification-issuer">Hackerrank</div>
+                    </div>
+                </div>
+                <div class="certification-footer">
                     <div class="certification-date">2025</div>
-                    <button class="btn-view-certificate" data-certificate="cert2">View Certificate</button>
+                    <button class="btn-view-certificate" data-certificate="cert2"><i class="fas fa-eye"></i> Show</button>
                 </div>
-                </div>
-                <div class="certification-card">
-                    <div class="certification-header">
-                        <div class="certification-icon">
-                            <i class="fas fa-certificate"></i>
-                        </div>
-                        <div>
-                            <div class="certification-title">Java Backend Developer</div>
-                            <div class="certification-issuer">TECHGIG</div>
-                        </div>
+            </div>
+            
+            <!-- Java (shown by default) -->
+            <div class="certification-card" data-category="java">
+                <div class="certification-header">
+                    <div class="certification-icon">
+                        <i class="fas fa-certificate"></i>
                     </div>
-                    <div class="certification-footer">
+                    <div>
+                        <div class="certification-title">Java Backend Developer</div>
+                        <div class="certification-issuer">TECHGIG</div>
+                    </div>
+                </div>
+                <div class="certification-footer">
                     <div class="certification-date">2025</div>
-                    <button class="btn-view-certificate" data-certificate="cert3">View Certificate</button>
+                    <button class="btn-view-certificate" data-certificate="cert3"><i class="fas fa-eye"></i> Show</button>
                 </div>
-                </div>
-                <div class="certification-card">
-                    <div class="certification-header">
-                        <div class="certification-icon">
-                            <i class="fas fa-certificate"></i>
-                        </div>
-                        <div>
-                            <div class="certification-title">Deep Learning with TensorFlow</div>
-                            <div class="certification-issuer">IBM</div>
-                        </div>
+            </div>
+
+            <!-- HackerRank Certifications -->
+            <div class="certification-card" data-category="hackerrank">
+                <div class="certification-header">
+                    <div class="certification-icon">
+                        <i class="fas fa-certificate"></i>
                     </div>
-                    <div class="certification-footer">
-                    <div class="certification-date">2023</div>
-                    <button class="btn-view-certificate" data-certificate="cert4">View Certificate</button>
-                </div>
-                </div>
-                <div class="certification-card">
-                    <div class="certification-header">
-                        <div class="certification-icon">
-                            <i class="fas fa-certificate"></i>
-                        </div>
-                        <div>
-                            <div class="certification-title">Analyzing Data with Python</div>
-                            <div class="certification-issuer">IBM</div>
-                        </div>
+                    <div>
+                        <div class="certification-title">Java (basic) Course</div>
+                        <div class="certification-issuer">Hackerrank</div>
                     </div>
-                    <div class="certification-footer">
-                    <div class="certification-date">2023</div>
-                    <button class="btn-view-certificate" data-certificate="cert5">View Certificate</button>
                 </div>
+                <div class="certification-footer">
+                    <div class="certification-date">2025</div>
+                    <button class="btn-view-certificate" data-certificate="cert4"><i class="fas fa-eye"></i> Show</button>
                 </div>
-                <div class="certification-card">
-                    <div class="certification-header">
-                        <div class="certification-icon">
-                            <i class="fas fa-certificate"></i>
-                        </div>
-                        <div>
-                            <div class="certification-title">Python for Data Science, AI & Development</div>
-                            <div class="certification-issuer">IBM</div>
-                        </div>
+            </div>
+
+            <!-- HackerRank Certifications -->
+            <div class="certification-card" data-category="hackerrank">
+                <div class="certification-header">
+                    <div class="certification-icon">
+                        <i class="fas fa-certificate"></i>
                     </div>
-                    <div class="certification-footer">
-                    <div class="certification-date">2023</div>
-                    <button class="btn-view-certificate" data-certificate="cert6">View Certificate</button>
+                    <div>
+                        <div class="certification-title">JavaScript (Intermediate)</div>
+                        <div class="certification-issuer">Hackerrank</div>
+                    </div>
                 </div>
+                <div class="certification-footer">
+                    <div class="certification-date">2025</div>
+                    <button class="btn-view-certificate" data-certificate="cert5"><i class="fas fa-eye"></i> Show</button>
+                </div>
+            </div>
+
+            <!-- Python Certifications -->
+            <div class="certification-card" data-category="python">
+                <div class="certification-header">
+                    <div class="certification-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div>
+                        <div class="certification-title">Deep Learning with TensorFlow</div>
+                        <div class="certification-issuer">IBM</div>
+                    </div>
+                </div>
+                <div class="certification-footer">
+                    <div class="certification-date">2023</div>
+                    <button class="btn-view-certificate" data-certificate="cert6"><i class="fas fa-eye"></i> Show</button>
+                </div>
+            </div>
+            
+            <!-- Python Certifications -->
+            <div class="certification-card" data-category="python">
+                <div class="certification-header">
+                    <div class="certification-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div>
+                        <div class="certification-title">Analyzing Data with Python</div>
+                        <div class="certification-issuer">IBM</div>
+                    </div>
+                </div>
+                <div class="certification-footer">
+                    <div class="certification-date">2023</div>
+                    <button class="btn-view-certificate" data-certificate="cert7"><i class="fas fa-eye"></i> Show</button>
+                </div>
+            </div>
+            
+            <!-- Python Certifications -->
+            <div class="certification-card" data-category="python">
+                <div class="certification-header">
+                    <div class="certification-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div>
+                        <div class="certification-title">Python for Data Science, AI & Development</div>
+                        <div class="certification-issuer">IBM</div>
+                    </div>
+                </div>
+                <div class="certification-footer">
+                    <div class="certification-date">2023</div>
+                    <button class="btn-view-certificate" data-certificate="cert8"><i class="fas fa-eye"></i> Show</button>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- Certificate Modal -->
 <div class="certificate-modal" id="certificateModal">
@@ -549,320 +600,40 @@
      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        // Mobile Menu Toggle
-        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-        const navMenu = document.getElementById('nav-menu');
-        
-        mobileMenuBtn.addEventListener('click', () => {
-            navMenu.classList.toggle('active');
-            mobileMenuBtn.innerHTML = navMenu.classList.contains('active') ? 
-                '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
-        });
-        
-        // Close mobile menu when clicking on a link
-        document.querySelectorAll('#nav-menu a').forEach(link => {
-            link.addEventListener('click', () => {
-                navMenu.classList.remove('active');
-                mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
-            });
-        });
-        
-        // Header scroll effect
-        window.addEventListener('scroll', () => {
-            const header = document.getElementById('header');
-            if (window.scrollY > 50) {
-                header.classList.add('scrolled');
-            } else {
-                header.classList.remove('scrolled');
-            }
-        });
-        
-        // Back to top button
-        const backToTopBtn = document.getElementById('backToTop');
-        
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 300) {
-                backToTopBtn.classList.add('active');
-            } else {
-                backToTopBtn.classList.remove('active');
-            }
-        });
-        
-        backToTopBtn.addEventListener('click', () => {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        });
-        
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                
-                const targetId = this.getAttribute('href');
-                const targetElement = document.querySelector(targetId);
-                
-                if (targetElement) {
-                    window.scrollTo({
-                        top: targetElement.offsetTop - 80,
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-        
-        // Animation on scroll
-        const animateOnScroll = () => {
-            const elements = document.querySelectorAll('.skill-category, .project-card, .certification-card, .contact-form');
-            
-            elements.forEach(element => {
-                const elementPosition = element.getBoundingClientRect().top;
-                const screenPosition = window.innerHeight / 1.2;
-                
-                if (elementPosition < screenPosition) {
-                    element.style.opacity = '1';
-                    element.style.transform = 'translateY(0)';
-                }
-            });
-        };
-
-        // Set initial state for animated elements
-        document.querySelectorAll('.skill-category, .project-card, .certification-card, .contact-form').forEach(el => {
-            el.style.opacity = '0';
-            el.style.transform = 'translateY(30px)';
-            el.style.transition = 'all 0.5s ease';
-        });
-
-        // Run animation check on scroll and load
-        window.addEventListener('scroll', animateOnScroll);
-        window.addEventListener('load', animateOnScroll);
-        
-
-// certificate
-        document.addEventListener('DOMContentLoaded', function() {
-    const modal = document.getElementById('certificateModal');
-    const modalImg = document.getElementById('certificateImage');
-    const closeBtn = document.querySelector('.close-modal');
-    
-    // Get all view buttons
-    const viewButtons = document.querySelectorAll('.btn-view-certificate');
-    
-    // Certificate image paths (replace with your actual paths)
-    const certificateImages = {
-        cert1: 'img/project2.png',
-        cert2: 'img/project1.png',
-        cert3: 'img/project3.png',
-        cert4: 'images/certificates/tensorflow-cert.jpg',
-        cert5: 'images/certificates/data-python-cert.jpg',
-        cert6: 'images/certificates/python-ai-cert.jpg'
-    };
-    
-    // Add click event to each button
-    viewButtons.forEach(button => {
-        button.addEventListener('click', function() {
-            const certId = this.getAttribute('data-certificate');
-            modalImg.src = certificateImages[certId];
-            modal.style.display = 'block';
-            document.body.style.overflow = 'hidden'; // Prevent scrolling
-        });
-    });
-    
-    // Close modal
-    closeBtn.addEventListener('click', function() {
-        modal.style.display = 'none';
-        document.body.style.overflow = 'auto';
-    });
-    
-    // Close when clicking outside image
-    window.addEventListener('click', function(event) {
-        if (event.target === modal) {
-            modal.style.display = 'none';
-            document.body.style.overflow = 'auto';
-        }
-    });
-    
-    // Close with ESC key
-    document.addEventListener('keydown', function(event) {
-        if (event.key === 'Escape') {
-            modal.style.display = 'none';
-            document.body.style.overflow = 'auto';
-        }
-    });
-});
-
-
-//projects
-document.addEventListener('DOMContentLoaded', function() {
-    const filterButtons = document.querySelectorAll('.filter-btn');
-    const projectCards = document.querySelectorAll('.project-card');
-    const projectsGrid = document.querySelector('.projects-grid');
-    
-    // Initially hide all projects
-    projectCards.forEach(card => {
-        card.style.display = 'none';
-    });
-    
-    // Filter function
-    function filterProjects(category) {
-        let hasMatches = false;
-        
-        projectCards.forEach(card => {
-            card.classList.remove('active');
-            card.style.display = 'none';
-            
-            // Show matching projects
-            if (category === 'all' || card.dataset.category === category) {
-                card.style.display = 'block';
-                setTimeout(() => card.classList.add('active'), 10);
-                hasMatches = true;
-            }
-        });
-        
-        // Update active button
-        filterButtons.forEach(btn => {
-            btn.classList.toggle('active', btn.dataset.filter === category);
-        });
-        
-        // Show message if no projects found
-        if (!hasMatches) {
-            projectsGrid.innerHTML = '<p class="no-projects">No projects found in this category</p>';
-        }
-    }
-    
-    // Add click events to buttons
-    filterButtons.forEach(btn => {
-        btn.addEventListener('click', () => filterProjects(btn.dataset.filter));
-    });
-    
-    // Optional: Show all projects if URL has #all hash
-    if (window.location.hash === '#all') {
-        filterProjects('all');
-    }
-});
-
-// about resume 
-
-document.addEventListener('DOMContentLoaded', function() {
-    // CV Modal functionality
-    const cvModal = document.getElementById('cvModal');
-    const cvBtn = document.querySelector('.cv-download-btn');
-    const closeBtn = document.querySelector('.close-cv-modal');
-    
-    // Open modal when Download CV button is clicked
-    cvBtn.addEventListener('click', function(e) {
-        e.preventDefault();
-        cvModal.style.display = 'block';
-        document.body.style.overflow = 'hidden'; // Prevent scrolling
-    });
-    
-    // Close modal
-    closeBtn.addEventListener('click', function() {
-        cvModal.style.display = 'none';
-        document.body.style.overflow = 'auto';
-    });
-    
-    // Close when clicking outside modal
-    window.addEventListener('click', function(e) {
-        if (e.target === cvModal) {
-            cvModal.style.display = 'none';
-            document.body.style.overflow = 'auto';
-        }
-    });
-    
-    // Close with ESC key
-    document.addEventListener('keydown', function(e) {
-        if (e.key === 'Escape' && cvModal.style.display === 'block') {
-            cvModal.style.display = 'none';
-            document.body.style.overflow = 'auto';
-        }
-    });
-});
-
-
-// hero
-
-document.addEventListener('DOMContentLoaded', function() {
-    // Typing animation for title
-    const typingText = document.querySelector('.typing-text');
-    const titles = ["Fullstack Developer", "Java Specialist", "Spring Boot Expert"];
-    let currentTitle = 0;
-    let charIndex = 0;
-    let isDeleting = false;
-    
-    function typeTitle() {
-        const currentText = titles[currentTitle];
-        
-        if (isDeleting) {
-            typingText.textContent = currentText.substring(0, charIndex - 1);
-            charIndex--;
-        } else {
-            typingText.textContent = currentText.substring(0, charIndex + 1);
-            charIndex++;
-        }
-        
-        if (!isDeleting && charIndex === currentText.length) {
-            isDeleting = true;
-            setTimeout(typeTitle, 1500);
-        } else if (isDeleting && charIndex === 0) {
-            isDeleting = false;
-            currentTitle = (currentTitle + 1) % titles.length;
-            setTimeout(typeTitle, 500);
-        } else {
-            const typingSpeed = isDeleting ? 50 : 100;
-            setTimeout(typeTitle, typingSpeed);
-        }
-    }
-    
-    // Start typing animation after name animation completes
-    setTimeout(typeTitle, 1800);
-    
-    // Skills slider animation
-    const skills = document.querySelectorAll('.skill-tag');
-    let currentSkill = 0;
-    
-    function rotateSkills() {
-        skills.forEach(skill => skill.style.display = 'none');
-        skills[currentSkill].style.display = 'inline-block';
-        currentSkill = (currentSkill + 1) % skills.length;
-        setTimeout(rotateSkills, 2000);
-    }
-    
-    // Start skills rotation after all other animations
-    setTimeout(rotateSkills, 2500);
-});
-
+// ✅ Mobile Menu Toggle (only one clean version)
 document.addEventListener('DOMContentLoaded', function() {
     const mobileMenuBtn = document.getElementById('mobile-menu-btn');
     const navMenu = document.getElementById('nav-menu');
-    
+
+    // Toggle mobile menu
     mobileMenuBtn.addEventListener('click', function() {
         navMenu.classList.toggle('active');
-        this.innerHTML = navMenu.classList.contains('active') ? 
-            '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
+        this.innerHTML = navMenu.classList.contains('active')
+            ? '<i class="fas fa-times"></i>'
+            : '<i class="fas fa-bars"></i>';
     });
-    
-    // Close menu when clicking on a link
+
+    // Close menu when clicking on a nav link
     document.querySelectorAll('.nav-link').forEach(link => {
         link.addEventListener('click', function() {
-            if(navMenu.classList.contains('active')) {
+            if (navMenu.classList.contains('active')) {
                 navMenu.classList.remove('active');
                 mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
             }
         });
     });
-    
-    // Add active class to current section
+
+    // Add active class while scrolling through sections
     window.addEventListener('scroll', function() {
         document.querySelectorAll('section').forEach(section => {
             const sectionTop = section.offsetTop - 100;
             const sectionHeight = section.offsetHeight;
             const sectionId = section.getAttribute('id');
-            
-            if(window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+
+            if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
                 document.querySelectorAll('.nav-link').forEach(link => {
                     link.classList.remove('active');
-                    if(link.getAttribute('href') === `#${sectionId}`) {
+                    if (link.getAttribute('href') === `#${sectionId}`) {
                         link.classList.add('active');
                     }
                 });
@@ -871,34 +642,237 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+// ✅ Header scroll effect
+window.addEventListener('scroll', () => {
+    const header = document.getElementById('header');
+    if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+    } else {
+        header.classList.remove('scrolled');
+    }
+});
 
-// contact
+// ✅ Back to top button
+const backToTopBtn = document.getElementById('backToTop');
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+        backToTopBtn.classList.add('active');
+    } else {
+        backToTopBtn.classList.remove('active');
+    }
+});
+backToTopBtn.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});
 
- // Initialize AOS animation library
-    AOS.init({
-        duration: 800,
-        easing: 'ease-in-out',
-        once: true
+// ✅ Smooth scrolling
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+            window.scrollTo({
+                top: targetElement.offsetTop - 80,
+                behavior: 'smooth'
+            });
+        }
     });
+});
+
+// ✅ Animation on scroll
+const animateOnScroll = () => {
+    const elements = document.querySelectorAll('.skill-category, .project-card, .certification-card, .contact-form');
+    elements.forEach(element => {
+        const elementPosition = element.getBoundingClientRect().top;
+        const screenPosition = window.innerHeight / 1.2;
+        if (elementPosition < screenPosition) {
+            element.style.opacity = '1';
+            element.style.transform = 'translateY(0)';
+        }
+    });
+};
+document.querySelectorAll('.skill-category, .project-card, .certification-card, .contact-form').forEach(el => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(30px)';
+    el.style.transition = 'all 0.5s ease';
+});
+window.addEventListener('scroll', animateOnScroll);
+window.addEventListener('load', animateOnScroll);
+
+// ✅ Certificate Modal
 document.addEventListener('DOMContentLoaded', function() {
-    // Ensure all social links work
-    const socialLinks = document.querySelectorAll('.social-link');
-    
-    socialLinks.forEach(link => {
-        // Remove any existing click handlers that might be preventing navigation
+    const modal = document.getElementById('certificateModal');
+    const modalImg = document.getElementById('certificateImage');
+    const closeBtn = document.querySelector('.close-modal');
+    const viewButtons = document.querySelectorAll('.btn-view-certificate');
+    const certificateImages = {
+        cert1: 'img/full-stack.jpg',
+        cert2: 'img/css-hakerrank.png',
+        cert3: 'img/tech-java.png',
+        cert4: 'img/java-hackerrank.png',
+        cert5: 'img/js-hackerrank.png',
+        cert6: 'img/tenserflow-python.png',
+        cert7: 'img/analysis-python.png',
+        cert8: 'img/datascience-python.png'
+    };
+    viewButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const certId = this.getAttribute('data-certificate');
+            modalImg.src = certificateImages[certId];
+            modal.style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        });
+    });
+    closeBtn.addEventListener('click', () => {
+        modal.style.display = 'none';
+        document.body.style.overflow = 'auto';
+    });
+    window.addEventListener('click', e => {
+        if (e.target === modal) {
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+    });
+    document.addEventListener('keydown', e => {
+        if (e.key === 'Escape') {
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+    });
+});
+
+// ✅ Projects filter
+document.addEventListener('DOMContentLoaded', function() {
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const projectCards = document.querySelectorAll('.project-card');
+    const projectsGrid = document.querySelector('.projects-grid');
+    projectCards.forEach(card => card.style.display = 'none');
+    function filterProjects(category) {
+        let hasMatches = false;
+        projectCards.forEach(card => {
+            card.classList.remove('active');
+            card.style.display = 'none';
+            if (category === 'all' || card.dataset.category === category) {
+                card.style.display = 'block';
+                setTimeout(() => card.classList.add('active'), 10);
+                hasMatches = true;
+            }
+        });
+        filterButtons.forEach(btn => {
+            btn.classList.toggle('active', btn.dataset.filter === category);
+        });
+        if (!hasMatches) {
+            projectsGrid.innerHTML = '<p class="no-projects">No projects found in this category</p>';
+        }
+    }
+    filterButtons.forEach(btn => {
+        btn.addEventListener('click', () => filterProjects(btn.dataset.filter));
+    });
+    if (window.location.hash === '#all') {
+        filterProjects('all');
+    }
+});
+
+// ✅ Resume Modal
+document.addEventListener('DOMContentLoaded', function() {
+    const cvModal = document.getElementById('cvModal');
+    const cvBtn = document.querySelector('.cv-download-btn');
+    const closeBtn = document.querySelector('.close-cv-modal');
+    cvBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        cvModal.style.display = 'block';
+        document.body.style.overflow = 'hidden';
+    });
+    closeBtn.addEventListener('click', () => {
+        cvModal.style.display = 'none';
+        document.body.style.overflow = 'auto';
+    });
+    window.addEventListener('click', e => {
+        if (e.target === cvModal) {
+            cvModal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+    });
+    document.addEventListener('keydown', e => {
+        if (e.key === 'Escape' && cvModal.style.display === 'block') {
+            cvModal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+    });
+});
+
+// ✅ Hero typing + skills rotation
+document.addEventListener('DOMContentLoaded', function() {
+    const typingText = document.querySelector('.typing-text');
+    const titles = ["Fullstack Developer", "Java Specialist", "Spring Boot Expert"];
+    let currentTitle = 0, charIndex = 0, isDeleting = false;
+    function typeTitle() {
+        const currentText = titles[currentTitle];
+        if (isDeleting) {
+            typingText.textContent = currentText.substring(0, charIndex - 1);
+            charIndex--;
+        } else {
+            typingText.textContent = currentText.substring(0, charIndex + 1);
+            charIndex++;
+        }
+        if (!isDeleting && charIndex === currentText.length) {
+            isDeleting = true;
+            setTimeout(typeTitle, 1500);
+        } else if (isDeleting && charIndex === 0) {
+            isDeleting = false;
+            currentTitle = (currentTitle + 1) % titles.length;
+            setTimeout(typeTitle, 500);
+        } else {
+            setTimeout(typeTitle, isDeleting ? 50 : 100);
+        }
+    }
+    setTimeout(typeTitle, 1800);
+    const skills = document.querySelectorAll('.skill-tag');
+    let currentSkill = 0;
+    function rotateSkills() {
+        skills.forEach(skill => skill.style.display = 'none');
+        skills[currentSkill].style.display = 'inline-block';
+        currentSkill = (currentSkill + 1) % skills.length;
+        setTimeout(rotateSkills, 2000);
+    }
+    setTimeout(rotateSkills, 2500);
+});
+
+// ✅ Contact + Social links
+AOS.init({ duration: 800, easing: 'ease-in-out', once: true });
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.social-link').forEach(link => {
         link.onclick = null;
-        
-        // Add proper click handler
         link.addEventListener('click', function(e) {
-            // For extra safety, prevent any parent elements from blocking
             e.stopPropagation();
             window.open(this.href, '_blank');
         });
     });
 });
-    
-    </script>
+
+// ✅ Certification filter
+document.addEventListener('DOMContentLoaded', function() {
+    const filterButtons = document.querySelectorAll('.certification-filters .filter-btn');
+    const certificationCards = document.querySelectorAll('.certification-card');
+    filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            button.classList.add('active');
+            const filterValue = button.getAttribute('data-filter');
+            certificationCards.forEach(card => {
+                const cardCategory = card.getAttribute('data-category');
+                if (filterValue === 'all' || cardCategory === filterValue) {
+                    card.classList.remove('hidden');
+                } else {
+                    card.classList.add('hidden');
+                }
+            });
+        });
+    });
+});
+</script>
+
 
 </body>
-
 </html>
