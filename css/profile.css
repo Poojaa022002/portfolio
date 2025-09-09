@@ -1,10 +1,10 @@
  /* Global Styles */
   :root {
-    --primary: #333333;        /* Dark Gray (Primary) */
-    --secondary: #FF6B35;      /* Vibrant Orange (Accent) - More professional than pure orange */
-    --dark: #1A1A1A;           /* Almost Black (Headings) */
-    --light: #d9d9d9;          /* Light Gray (Background) */
-    --accent: #808080;         /* Medium Gray (Secondary Elements) */
+    --primary: #333333;        
+    --secondary: #FF6B35;      
+    --dark: #1A1A1A;           
+    --light: #d9d9d9;         
+    --accent: #808080;         
     --text: #2D2D2D;           
     --text-light: #666666;     
 }
@@ -82,7 +82,7 @@
         }
         
         .btn:hover {
-            background-color: #006666;
+            background-color: #717171;
             transform: translateY(-3px);
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
         }
@@ -224,6 +224,8 @@
 .nav-link.active::before {
     display: none;
 }
+
+
 
 /* Responsive styles */
 @media (max-width: 992px) {
@@ -820,7 +822,7 @@ h2.typing-text {
             background: white;
             padding: 20px;
             border-radius: 10px;
-            box-shadow: 0 5px 15px #008080;
+            box-shadow: 0 5px 15px #2D2D2D;
             margin-top: 30px;
             transition: all 0.3s ease;
         }
@@ -976,7 +978,7 @@ h2.typing-text {
         
         .project-card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 15px 30px #008080;
+            box-shadow: 0 15px 30px #2D2D2D;
         }
         
         .project-img-container {
@@ -1200,6 +1202,43 @@ h2.typing-text {
     background-color: #E05A2B;
     transform: translateY(-2px);
 }
+
+.certification-filters {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+        gap: 10px;
+    }
+    
+    .filter-btn {
+        padding: 8px 16px;
+        background: #f1f1f1;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    
+    .filter-btn.active {
+        background: #4CAF50;
+        color: white;
+    }
+    
+    .filter-btn:hover {
+        background: #ddd;
+    }
+    
+    .filter-btn.active:hover {
+        background: #45a049;
+    }
+    
+    .certification-card {
+        display: block;
+    }
+    
+    .certification-card.hidden {
+        display: none;
+    }
 
 /* Certificate Modal */
 .certificate-modal {
@@ -1594,13 +1633,14 @@ h2.typing-text {
         }
         
         .back-to-top:hover {
-            background: linear-gradient(45deg, var(--secondary), #FF6B6B);
+            background: linear-gradient(45deg, var(--secondary), #2D2D2D);
             transform: translateY(-5px);
         }
         
         /* Responsive Styles */
         @media (max-width: 992px) {
             .hero-text h1 {
+                margin-top: 450px;
                 font-size: 2.5rem;
             }
             
@@ -1643,6 +1683,7 @@ h2.typing-text {
             }
             
             .hero-text h1 {
+                margin-top: 450px;
                 font-size: 2.2rem;
             }
             
@@ -1687,6 +1728,7 @@ h2.typing-text {
             }
             
             .hero-text h1 {
+                margin-top: 450px;
                 font-size: 2rem;
             }
             
